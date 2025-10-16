@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>CFGS Desarrollo de Aplicaciones Web</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="cfgs-desarrollo-de-aplicaciones-web">CFGS Desarrollo de Aplicaciones Web</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">CFGS DESARROLLO  DE APLICACIONES WEB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="images\portada.jpg" alt="Alt"></td>
+</tr>
+<tr>
+<td style="text-align:center">DESPLIEGUE DE APLCIACIONES WEB</td>
+</tr>
+<tr>
+<td style="text-align:center">CYBERSEGURIDAD</td>
+</tr>
+<tr>
+<td style="text-align:center">DAWES Tema 2. INSTALACIÓN, CONFIGURACIÓN Y DOCUMENTACIÓN DE ENTORNO DE DESARROLLO Y DEL ENTORNO DE EXPLOTACIÓN</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><a href="#cfgs-desarrollo-de-aplicaciones-web">CFGS Desarrollo de Aplicaciones Web</a>
+<ul>
+<li><a href="#1-entorno-de-desarrollo">1. Entorno de Desarrollo</a>
+<ul>
+<li><a href="#11-ubuntu-server-24043-lts">1.1 Ubuntu Server 24.04.3 LTS</a>
+<ul>
+<li><a href="#111-configuraci%C3%B3n-inicial">1.1.1 <strong>Configuración inicial</strong></a></li>
+<li><a href="#instalacion-de-la-maquina"><strong>Instalacion de la maquina</strong></a>
+<ul>
+<li><a href="#actualizar-el-sistema"><strong>Actualizar el sistema</strong></a></li>
+<li><a href="#nombre-y-configuraci%C3%B3n-de-red">Nombre y configuración de red</a></li>
+<li><a href="#configuraci%C3%B3n-fecha-y-hora"><strong>Configuración fecha y hora</strong></a></li>
+<li><a href="#cuentas-administradoras"><strong>Cuentas administradoras</strong></a></li>
+<li><a href="#habilitar-cortafuegos"><strong>Habilitar cortafuegos</strong></a></li>
+<li><a href="#comandos-particiones"><strong>Comandos particiones</strong></a></li>
+</ul>
+</li>
+<li><a href="#112-instalaci%C3%B3n-del-servidor-web">1.1.2 Instalación del servidor web</a>
+<ul>
+<li><a href="#actualizar-el-sistema-1"><strong>Actualizar el sistema</strong></a></li>
+<li><a href="#instalaci%C3%B3n">Instalación</a></li>
+<li><a href="#verficaci%C3%B3n-del-servicio">Verficación del servicio</a></li>
+<li><a href="#virtual-hosts">Virtual Hosts</a></li>
+<li><a href="#permisos-y-usuarios">Permisos y usuarios</a></li>
+</ul>
+</li>
+<li><a href="#113-php">1.1.3 PHP</a></li>
+<li><a href="#114-mysql">1.1.4 MySQL</a></li>
+<li><a href="#115-xdebug">1.1.5 XDebug</a></li>
+<li><a href="#116-servidor-web-seguro-https">1.1.6 Servidor web seguro (HTTPS)</a></li>
+<li><a href="#117-dns">1.1.7 DNS</a></li>
+<li><a href="#118-sftp">1.1.8 SFTP</a></li>
+<li><a href="#119-apache-tomcat">1.1.9 Apache Tomcat</a></li>
+<li><a href="#1110-ldap">1.1.10 LDAP</a></li>
+</ul>
+</li>
+<li><a href="#12-windows-11">1.2 Windows 11</a>
+<ul>
+<li><a href="#121-configuraci%C3%B3n-inicial">1.2.1 <strong>Configuración inicial</strong></a>
+<ul>
+<li><a href="#nombre-y-configuraci%C3%B3n-de-red-1"><strong>Nombre y configuración de red</strong></a></li>
+<li><a href="#cuentas-administradoras-1"><strong>Cuentas administradoras</strong></a></li>
+</ul>
+</li>
+<li><a href="#122-navegadores">1.2.2 <strong>Navegadores</strong></a></li>
+<li><a href="#123-filezilla">1.2.3 <strong>FileZilla</strong></a></li>
+<li><a href="#124-netbeans">1.2.4 <strong>Netbeans</strong></a></li>
+<li><a href="#125-visual-studio-code">1.2.5 <strong>Visual Studio Code</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#2-github">2. GitHub</a></li>
+<li><a href="#3entorno-de-explotaci%C3%B3n">3.Entorno de Explotación</a>
+<ul>
+<li><a href="#apache-netbeans-ide22">Apache NetBeans IDE22</a>
+<ul>
+<li><a href="#para-crear-un-nuevo-proyecto">Para crear un nuevo proyecto</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-entorno-de-desarrollo">1. Entorno de Desarrollo</h2>
+<h3 id="11-ubuntu-server-24043-lts">1.1 Ubuntu Server 24.04.3 LTS</h3>
+<p>Este documento es una guía detallada del proceso de instalación y configuración de un servidor de aplicaciones en Ubuntu Server utilizando Apache, con soporte PHP y MySQL</p>
+<h4 id="111-configuración-inicial">1.1.1 <strong>Configuración inicial</strong></h4>
+<h4 id="instalacion-de-la-maquina"><strong>Instalacion de la maquina</strong></h4>
+<p>Nº de RAM = 2048 MB
+Nº de Procesadores = 2
+Red = adaptador puente</p>
+<p>Cuando nos pregunte como se llamara nuestra cuenta, le decimos que miadmin con contraseña paso</p>
+<p>Marcamos la casilla de instalar ssh</p>
+<p>Gestion de particiones
+<img src="images\particion_paso1.png" alt="Alt">
+<img src="images\particion_paso2.png" alt="Alt">
+<img src="images\particion_paso3.png" alt="Alt">
+<img src="images\particion_paso4.png" alt="Alt"></p>
+<h5 id="actualizar-el-sistema"><strong>Actualizar el sistema</strong></h5>
+<pre><code class="language-bash">sudo apt update
+sudo apt upgrade
+</code></pre>
+<h5 id="nombre-y-configuración-de-red">Nombre y configuración de red</h5>
+<blockquote>
+<p><strong>Nombre de la máquina</strong>: XXX-Limpia<br>
+<strong>Memoria RAM</strong>: 2G<br>
+<strong>Particiones</strong>: 150G(/) y resto (/var)<br>
+<strong>Configuración de red interface</strong>: xxxx <br>
+<strong>Dirección IP</strong> :10.199.9.114/22<br>
+<strong>GW</strong>: 10.199.8.1/22<br>
+<strong>DNS</strong>: 10.151.123.21</p>
+</blockquote>
+<p>Debemos marcar la casilla de instalar ssh en la instalación por defecto, pero sino lo hemos hecho</p>
+<pre><code class="language-bash">sudo apt install openssh-server
+</code></pre>
+<p>Para comprobar si lo tenemos o no</p>
+<pre><code class="language-bash">sudo systemctl status ssh
+</code></pre>
+<p>Comprobamos nuestro nombre</p>
+<pre><code class="language-bash"><span class="hljs-built_in">uname</span> -a
+</code></pre>
+<p>Si deseamos cambiarlo</p>
+<pre><code class="language-bash">sudo hostnamectl set-hostname &lt;NuevoNombre&gt;
+sudo nano /etc/hosts
+systemctl reboot
+</code></pre>
+<p>Comprobamos nuestra IP, nuestra puerta de enlace y los DNS respectivamente.</p>
+<pre><code class="language-bash">ip a
+ip r
+resolvectl
+</code></pre>
+<p>En mi ejemplo, mi IP seria 10.199.9.114
+<img src="images\ip_a.png" alt="Alt">
+Los otros datos se ven claramente con sus respectivos comandos</p>
+<p>Copiamos el fichero de configuración del interface de red  <strong>/etc/netplan/50-xxx.yaml</strong> y hacemos un backup</p>
+<pre><code class="language-bash"><span class="hljs-built_in">cp</span> 50-xxx.yaml 50-xxx.yaml.backup
+</code></pre>
+<p>Le cambiamos el nombre al original</p>
+<pre><code class="language-bash"><span class="hljs-built_in">mv</span> 50-xxx.yaml enp0s3.yaml
+</code></pre>
+<p>Editar el fichero de configuración del interface de red  <strong>/etc/netplan/enp0s3.yaml</strong>,</p>
+<pre><code class="language-bash">
+<span class="hljs-comment"># This is the network config written by &#x27;subiquity&#x27;</span>
+network:
+  ethernets:
+    enp0s3:
+      addresses:
+       - 10.199.9.114/22 (la IP estatica que quieras darle)
+      gateway4: 10.199.8.1/22
+      nameservers:
+         addresses:
+         - 10.151.123.21 (Tus DNS)
+         - 10.151.126.21
+         search: [educa.jcyl.es] (tu dominio)
+  version: 2
+</code></pre>
+<p>Debemos aplicar los cambios</p>
+<pre><code class="language-bash">sudo netplan apply
+</code></pre>
+<h5 id="configuración-fecha-y-hora"><strong>Configuración fecha y hora</strong></h5>
+<p><a href="https://somebooks.es/establecer-la-fecha-hora-y-zona-horaria-en-la-terminal-de-ubuntu-20-04-lts/" title="Cambiar fecha y hora">Establecer fecha, hora y zona horaria</a>
+Para comprobar nuestra fecha y hora</p>
+<pre><code class="language-bash"><span class="hljs-built_in">date</span>
+</code></pre>
+<p>Si necesitamos cambiarlo</p>
+<pre><code class="language-bash">timedatectl set-timezone Europe/Madrid
+</code></pre>
+<h5 id="cuentas-administradoras"><strong>Cuentas administradoras</strong></h5>
+<p>Root viene por defecto al instalar la máquina</p>
+<blockquote>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> root(inicio)</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> miadmin/paso</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> miadmin2/paso</li>
+</ul>
+</blockquote>
+<p>Creacion de miadmin2:</p>
+<pre><code class="language-bash">sudo adduser miadmin2
+paso
+</code></pre>
+<p>Ahora lo metemos en el grupo de los administradores</p>
+<pre><code class="language-bash">sudo usermod -aG miadmin2
+</code></pre>
+<p>Si queremos meterlo en otro grupos, los indicamos despues de -aG</p>
+<pre><code class="language-bash">sudo usermod -aG adm miadmin2
+</code></pre>
+<p>Todos los grupos para que miadmin2 tenga los mismo privilegios que miadmin</p>
+<pre><code class="language-bash">adm,cdrom,sudo,dip,plugdev,lxd
+</code></pre>
+<p>Comprobamos que lo hemos hecho bien</p>
+<pre><code class="language-bash"><span class="hljs-built_in">cat</span> /etc/passwd | grep miadmin2
+</code></pre>
+<p>Comprobamos que lo hemos hecho bien, en el grupo sudo</p>
+<pre><code class="language-bash"><span class="hljs-built_in">cat</span> /etc/group | grep miadmin2
+</code></pre>
+<p>Usamos F2 para cambiar a miadmin2 y comprobar que todo este bien o por comando:</p>
+<pre><code class="language-bash">su miadmin2
+</code></pre>
+<p>Y para salir de la sesion</p>
+<pre><code class="language-bash"><span class="hljs-built_in">exit</span>
+</code></pre>
+<p>Para borrar un usuario</p>
+<pre><code class="language-bash">sudo deluser
+</code></pre>
+<h5 id="habilitar-cortafuegos"><strong>Habilitar cortafuegos</strong></h5>
+<p>Comprobacion del estado del cortafuegos</p>
+<pre><code class="language-bash">sudo ufw status
+</code></pre>
+<p>Si es necesario, lo activamos</p>
+<pre><code class="language-bash">sudo ufw <span class="hljs-built_in">enable</span>
+</code></pre>
+<p>Si por lo que sea lo queremos desactivar</p>
+<pre><code class="language-bash">sudo ufw <span class="hljs-built_in">disable</span>
+</code></pre>
+<p>Ahora abrimos los puertos para permitir ssh</p>
+<pre><code class="language-bash">sudo ufw allow ssh
+</code></pre>
+<p>Como hemos abierto el puerto v6, que no nos interesa, sacamos su numero de protocolo:</p>
+<pre><code class="language-bash">sudo ufw status numbered
+</code></pre>
+<p>Y lo eliminamos</p>
+<pre><code class="language-bash">sudo ufw delete
+</code></pre>
+<h5 id="comandos-particiones"><strong>Comandos particiones</strong></h5>
+<pre><code class="language-bash">lsblk -fm
+lsblk -fn
+lsblk -a
+<span class="hljs-built_in">df</span> -h
+fdisk -l
+</code></pre>
+<h4 id="112-instalación-del-servidor-web">1.1.2 Instalación del servidor web</h4>
+<h5 id="actualizar-el-sistema-1"><strong>Actualizar el sistema</strong></h5>
+<pre><code class="language-bash">sudo apt update
+sudo apt upgrade
+</code></pre>
+<h5 id="instalación">Instalación</h5>
+<p>Instalamos apache https</p>
+<pre><code class="language-bash">sudo apt install apache2
+</code></pre>
+<p>Y abrimos es puerto para el servicio</p>
+<pre><code class="language-bash">sudo ufw allow 80
+</code></pre>
+<h5 id="verficación-del-servicio">Verficación del servicio</h5>
+<p>En nuestro navegador de confianza, buscamos mediante nuestra IP</p>
+<pre><code class="language-bash">http://IPSERVER
+</code></pre>
+<p>Comandos para iniciar/parar y ver el estado</p>
+<pre><code class="language-bash">sudo systemctl start/stop/status apache2
+</code></pre>
+<p>En el directorio /var/www/html para ver el dueño</p>
+<pre><code class="language-bash"><span class="hljs-built_in">ls</span> -l
+</code></pre>
+<p>Y creamos el usuario operador web</p>
+<pre><code class="language-bash">Sudo useradd –M –d /var/www/html -N –g www-data –s /bin/bash operadorweb 
+</code></pre>
+<p>Comprobacion (cambiar passwd por group si queremos comprobar el grupo)</p>
+<pre><code class="language-bash"><span class="hljs-built_in">cat</span> /etc/passwd | grep operadorweb 
+</code></pre>
+<p>Ahora ponemos la contraseña</p>
+<pre><code class="language-bash">sudo passwd operadorweb
+</code></pre>
+<p>Una vez hecho esto, le damos permisos de dueño</p>
+<pre><code class="language-bash">sudo <span class="hljs-built_in">chown</span> –R operadorweb:www-data /var/www/html
+</code></pre>
+<p>Y tambien cambiamos los permisos</p>
+<pre><code class="language-bash">sudo <span class="hljs-built_in">chmod</span> -R 775 /var/www/html  
+</code></pre>
+<p>En /etc/apache2/site-available/000-default.conf añadimos la siguiente linea</p>
+<pre><code class="language-bash">ErrorLog /var/www/html/error/error.log
+</code></pre>
+<h5 id="virtual-hosts">Virtual Hosts</h5>
+<h5 id="permisos-y-usuarios">Permisos y usuarios</h5>
+<h4 id="113-php">1.1.3 PHP</h4>
+<p>Instalación de PHP
+Update y upgrade
+Despues de la instalacion de apache, ejecutamos el comando</p>
+<pre><code class="language-bash">sudo apt install software-properties-common -y
+ 
+sudo add-apt-repository ppa:ondrej/php -y
+ 
+<span class="hljs-built_in">ls</span> /etc/apt/sources.list.d/ | grep ondrej
+ 
+</code></pre>
+<p>Y después hacemos update para actualizar los repositorios</p>
+<p>Para instalar PHP</p>
+<pre><code class="language-bash">sudo apt install libapache2-mod-php8.3 php8.3-fpm -y
+</code></pre>
+<p>Y habilitmaos el modulo</p>
+<pre><code class="language-bash">sudo a2enmod proxy_fcgi
+</code></pre>
+<p>Desabilitamos los siguientes modulos</p>
+<pre><code class="language-bash">sudo a2dismod mpm_prefork
+ 
+sudo a2dismod php8.3
+ 
+sudo a2dismod mpm_prefork
+</code></pre>
+<p>Volvemos a habilitar</p>
+<pre><code class="language-bash">sudo a2enmod mpm_event proxy_fcgi
+ 
+sudo a2enconf php8.3-fpm
+</code></pre>
+<p>Y reiniciamos</p>
+<pre><code class="language-bash">sudo systemctl restart apache2
+</code></pre>
+<p>Creamos un archivo info.php en /var/www/html con <?php phpinfo(); ?>
+Hacemos la comprobacion poniendo en el navegador nuestra dirección de la página/info.php</p>
+<h4 id="114-mysql">1.1.4 MySQL</h4>
+<h4 id="115-xdebug">1.1.5 XDebug</h4>
+<h4 id="116-servidor-web-seguro-https">1.1.6 Servidor web seguro (HTTPS)</h4>
+<h4 id="117-dns">1.1.7 DNS</h4>
+<h4 id="118-sftp">1.1.8 SFTP</h4>
+<h4 id="119-apache-tomcat">1.1.9 Apache Tomcat</h4>
+<h4 id="1110-ldap">1.1.10 LDAP</h4>
+<h3 id="12-windows-11">1.2 Windows 11</h3>
+<h4 id="121-configuración-inicial">1.2.1 <strong>Configuración inicial</strong></h4>
+<h5 id="nombre-y-configuración-de-red-1"><strong>Nombre y configuración de red</strong></h5>
+<h5 id="cuentas-administradoras-1"><strong>Cuentas administradoras</strong></h5>
+<h4 id="122-navegadores">1.2.2 <strong>Navegadores</strong></h4>
+<h4 id="123-mobaxterm">1.2.3 <strong>MobaXTerm</strong></h4>
+<h5 id="conexion-al-servidor">Conexion al servidor</h5>
+<p>Página de descarga</p>
+<pre><code class="language-bash">https://mobaxterm.mobatek.net/download-home-edition.html
+</code></pre>
+<p>Para conectarnos a nuestro servidor, en la seccion de &quot;Session&quot;
+<img src="images\home_moba.png" alt="Alt">|</p>
+<p>Tanto para la conexion SSH como para la SFTP, solo debemos introducir la IP
+del servidor y después el nombre de usuario (a recordar: operadorweb)</p>
+<h4 id="124-netbeans">1.2.4 <strong>Netbeans</strong></h4>
+<h4 id="125-visual-studio-code">1.2.5 <strong>Visual Studio Code</strong></h4>
+<h2 id="2-github">2. GitHub</h2>
+<h2 id="3entorno-de-explotación">3.Entorno de Explotación</h2>
+<h3 id="apache-netbeans-ide22">Apache NetBeans IDE22</h3>
+<p>La página de descarga de nuestro NetBeans, en la version que usamos.</p>
+<pre><code class="language-bash">https://netbeans.apache.org/front/main/download/nb22/
+</code></pre>
+<h4 id="para-crear-un-nuevo-proyecto">Para crear un nuevo proyecto</h4>
+<p>Es importante tener la carpeta creada con un archivo (aunque esté vacío) en nuestro servidor. Importante que el nombre de la carpeta sea el correcto. También es aconsejable tener la carpeta ya creada en local, sin necesidad de archivos dentro y con el nombre correspondiente.
+Cuando creamos un nuevo proyecto elegimos</p>
+<pre><code class="language-bash">PHP application from Remote Server
+</code></pre>
+<p>Lo único que cambiamos en la primera pestaña es el nombre del proyecto, escribiendo el adecuado (el mismo que el de las carpetas)
+En la siguiente pestaña:
+<img src="images\urlNTB.png" alt="Alt">|
+En &quot;manage&quot;:
+<img src="images\manageNTB.png" alt="Alt">|
+Si se han realizado los pasos correctamente, ya deberiamos de haber creado nuestro primer proyecto.</p>
+<hr>
+<blockquote>
+<p><strong>Álvaro García González</strong><br>
+Curso: 2025/2026<br>
+2º Curso CFGS Desarrollo de Aplicaciones Web</p>
+</blockquote>
+
+            
+            
+        </body>
+        </html>

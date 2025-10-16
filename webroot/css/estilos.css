@@ -1,0 +1,52 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 3 oct 2025, 10:14:58
+    Author     : alvaro.gargon.4
+*/
+
+*{margin: 0; padding: 0;}
+        body{
+            align-items: center;
+            background-color: beige;
+        }
+        p{
+            padding: 10px
+        }
+        header{
+            padding: 20px;
+            background-color: #403F6F;
+            color: beige;
+            text-align: center;
+        }
+        footer{
+            background-color: #403F6F;
+            color: beige;
+            text-align: center;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 15%;
+        }
+        .contenedor{
+            margin-top: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .proyectos{
+            margin: auto;
+            color: beige;
+            margin: 10px;
+            padding: 10px;
+            background-color: #403F6F;
+            width: 50%;
+            border-radius: 30px
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
