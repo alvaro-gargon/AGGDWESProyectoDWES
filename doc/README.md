@@ -308,6 +308,58 @@ de 'Directory /var/www'.
 AllowOverride All
 ```
 
+##### Servidor web seguro (HTTPS)
+[Agradecimientos por las capturas a Alberto Méndez Núñez: https://github.com/MN-Alberto/AMNDAWProyectoDAW?tab=readme-ov-file#116-dns]
+
+Para empezar habilitamos el modulo ssl
+```bash
+sudo a2enmod ssl
+```
+Despues generaremos las claves, los nombres de estas pueden ser cambiados a tu gusto. Son los archivos .cert y .key
+```bash
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/agg-used.key -out /etc/ssl/certs/agg-used.crt
+```
+Rellenamos con la información correspondiente
+
+Si queremos comprobar que se han generado correctamente:
+```bash
+sudo ls /etc/ssl/certs | grep agg-used
+sudo ls /etc/ssl/private | grep agg-used
+```
+
+![Alt](images/HTTPS1.PNG)|
+
+Reiniciamos apache 2
+```bash
+systemctl restart apache2
+```
+Copiamos el archivo de configuracion en /etc/apache2/sites-available
+```bash
+sudo cp default-ssl.conf agg-used.conf
+```
+
+![Alt](images/HTTPS2.PNG)|
+
+Ahora configuramos el archivo agg-used.conf. En las lineas de SSLCertificateFile y SSLCertificateKeyFile cambiamos el nombre de las claves por el nuestro
+
+![Alt](images/HTTPS3.PNG)|
+
+Por último, activamos el sitio que acabamos de configurar y reiniciamos apache
+```bash
+sudo a2ensite agg-used.conf
+sudo systemctl reload apache2
+```
+
+Y añadimos el puerto 443
+```bash
+sudo ufw allow 443
+```
+Y de paso borramos el puerto 80
+```bash
+sudo ufw status numbered
+sudo ufw delete x
+```
+
 
 ##### Virtual Hosts
 ##### Permisos y usuarios
@@ -341,7 +393,8 @@ Creamos un archivo info.php en /var/www/html con <?php phpinfo(); ?>
 Hacemos la comprobacion poniendo en el navegador nuestra dirección de la página/info.php
 #### 1.1.4 MySQL
 #### 1.1.5 XDebug
-#### 1.1.6 Servidor web seguro (HTTPS)
+
+
 #### 1.1.7 DNS
 #### 1.1.8 SFTP
 #### 1.1.9 Apache Tomcat
