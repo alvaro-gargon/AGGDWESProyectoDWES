@@ -13,10 +13,10 @@
     <div class="contenedor">
         <div class="proyectos">
             <a target="_blank" href="./doc/AGG-DWES-EJ-U1.pdf">Estudio Tema1. DESARROLLO WEB EN ENTORNO SERVIDOR </a>
+            <p><a target="_blank" href="./doc/EstructuraDelTrabajoDeLaravel.pdf">Estudio del framework Laravel</a></p>
         </div>
         <div class="proyectos">
             <a target="_blank" href="https://github.com/alvaro-gargon/AGGDAWProyectoDAW/blob/master/README.md">Estudio Tema2. INSTALACIÓN, CONFIGURACIÓN Y DOCUMENTACIÓN DEL ENTORNO DE DESARROLLO Y DEL ENTORNO DE EXPLOTACIÓN </a>
-            <p><a target="_blank" href="./doc/EstructuraDelTrabajoDeLaravel.pdf">Estudio del framework Laravel</a></p>
             <p><a target="_blank" href="./doc/EstudioClasesYFunciones.pdf">Estudio de clases y funciones PHP</a></p>
         </div>
         <div class="proyectos"><a href="../AGGDWESProyectoTema3/indexProyectoTema3.php">Proyecto tema 3. CARACTERÍSTICAS DEL LENGUAJE PHP</a></div>
