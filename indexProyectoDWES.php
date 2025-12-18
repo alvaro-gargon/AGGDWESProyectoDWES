@@ -26,7 +26,10 @@
             <p><a href="../AGGDWESProyectoTema5/indexProyectoTema5.php">Tema 5</a></p>
             <p><a href="../AGGDWESLoginLogoffTema5/indexLoginLogoffTema5.php">Proyecto LoginLogoff</a></p>
         </div>
-        <div class="proyectos">Proyecto tema 6. APLICACIONES WEB MULTICAPA</div>
+        <div class="proyectos">
+            <h2>Proyecto tema 6. APLICACIONES WEB MULTICAPA</h2>
+            <p><a href="../AGGDWESLoginLogoffTema6/indexLoginLogoff.php">Proyecto LoginLogoff</a></p>
+        </div>
         <div class="proyectos">Proyecto tema 7. PROGRAMACIÓN DE SERVICIOS WEB</div>
         <div class="proyectos">Proyecto tema 8. DESARROLLO DE APLICACIONES WEB HÍBRIDAS</div>
     </div>
