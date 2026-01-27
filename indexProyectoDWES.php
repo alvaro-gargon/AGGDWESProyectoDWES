@@ -31,7 +31,10 @@
             <p><a href="../AGGDWESLoginLogoffTema6/indexLoginLogoff.php">Proyecto LoginLogoff</a></p>
         </div>
         <div class="proyectos">Proyecto tema 7. PROGRAMACIÓN DE SERVICIOS WEB</div>
-        <div class="proyectos">Proyecto tema 8. DESARROLLO DE APLICACIONES WEB HÍBRIDAS</div>
+        <div class="proyectos">
+            Proyecto tema 8. DESARROLLO DE APLICACIONES WEB HÍBRIDAS
+            <p><a href="../AGGDWESAplicacionFinal/index.php">Aplicacion final</a></p>
+        </div>
     </div>
     <footer>
         <p><a href="../">Álvaro García González</a></p>
