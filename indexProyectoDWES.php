@@ -34,6 +34,7 @@
         <div class="proyectos">
             Proyecto tema 8. DESARROLLO DE APLICACIONES WEB HÍBRIDAS
             <p><a href="../AGGDWESAplicacionFinal/index.php">Aplicacion final</a></p>
+            <p><a href="https://biblioteca.alvarogargon.ieslossauces.es/">Aplicacion externa</a></p>
         </div>
     </div>
     <footer>
