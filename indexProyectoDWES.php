@@ -34,12 +34,13 @@
         <div class="proyectos">
             Proyecto tema 8. DESARROLLO DE APLICACIONES WEB HÍBRIDAS
             <p><a href="../AGGDWESAplicacionFinal/index.php">Aplicacion final</a></p>
+            <p><a href="https://biblioteca.alvarogargon.ieslossauces.es/">Aplicacion externa</a></p>
         </div>
     </div>
     <footer>
         <p><a href="../">Álvaro García González</a></p>
         
-        <p>Última actualización <time datetime="2026-01-27">27/01/2026</time></p>
+        <p>Última actualización <time datetime="2026-02-12">12/02/2026</time></p>
     </footer>
 </body>
 </html>
